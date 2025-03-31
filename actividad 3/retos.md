@@ -138,6 +138,143 @@ FinAlgoritmo
 
 6:
 
+Algoritmo ContarNumeros
+    Escribir "Ingrese la cantidad de números (N):"
+    Leer N
+	
+    contador_ceros <- 0
+    contador_menores <- 0
+    contador_mayores <- 0
+	
+    Para i <- 1 Hasta N Hacer
+        Escribir "Ingrese el número ", i, ":"
+        Leer numero
+        
+        Si numero = 0 Entonces
+            contador_ceros <- contador_ceros + 1
+        Sino Si numero < 0 Entonces
+				contador_menores <- contador_menores + 1
+			Sino
+				contador_mayores <- contador_mayores + 1
+			FinSi
+			finSi
+		FinPara
+		
+	
+		Escribir "Cantidad de números cero: ", contador_ceros
+		Escribir "Cantidad de números menores a cero: ", contador_menores
+		Escribir "Cantidad de números mayores a cero: ", contador_mayores
+FinAlgoritmo
+
+7:
+Algoritmo AhorroAnual
+    Definir ahorro_dia, ahorro_total Como Real
+    ahorro_dia <- 0.03  
+    ahorro_total <- 0
+	
+    Para dia <- 1 Hasta 365 Hacer
+        Escribir "Día ", dia, ": ahorro = ", ahorro_dia, " pesos"
+        ahorro_total <- ahorro_total + ahorro_dia
+        ahorro_dia <- ahorro_dia * 3  
+    FinPara
+	
+    Escribir "El ahorro total en el año es: ", ahorro_total, " pesos"
+FinAlgoritmo
+
+8 :
+Algoritmo CalcularPagoArticulos
+    Definir N, i Como Entero
+    Definir precio, descuento, precio_final, total_a_pagar Como Real
+	
+    Escribir "Ingrese la cantidad de artículos a comprar:"
+    Leer N
+	
+    total_a_pagar <- 0  
+	
+    Para i <- 1 Hasta N Hacer
+        Escribir "Ingrese el precio del artículo ", i, ":"
+        Leer precio
+		
+        
+        Si precio >= 200 Entonces
+            descuento <- precio * 0.15
+        Sino Si precio > 100 Entonces
+				descuento <- precio * 0.12
+			Sino
+				descuento <- precio * 0.10
+			FinSi
+			Finsi
+			
+			precio_final <- precio - descuento
+			
+			Escribir "Artículo ", i, ": Precio = ", precio, " Descuento = ", descuento, " Precio final = ", precio_final
+			
+			total_a_pagar <- total_a_pagar + precio_final
+		FinPara
+		
+		Escribir "El total a pagar por todos los artículos es: ", total_a_pagar
+FinAlgoritmo
+
+9:
+Algoritmo Exponencial_Taylor
+    Definir x, e_x, potencia, factorial Como Real
+    Definir N, i Como Entero
+	
+    
+    Escribir "Ingrese el valor de x:"
+    Leer x
+	
+    Escribir "Ingrese el número de términos N:"
+    Leer N
+	
+    
+    e_x <- 1
+    potencia <- 1
+    factorial <- 1
+	
+    
+    Para i <- 1 Hasta N Hacer
+        potencia <- potencia * x  
+        factorial <- factorial * i  
+        e_x <- e_x + (potencia / factorial)  
+    FinPara
+	
+    
+    Escribir "La aproximación de e^", x, " con ", N, " términos es: ", e_x
+FinAlgoritmo
+
+10:
+Algoritmo Seno_Taylor
+    Definir x, sen_x, potencia, factorial Como Real
+    Definir N, i, signo Como Entero
+	
+    
+    Escribir "Ingrese el valor de x en radianes:"
+    Leer x
+	
+    Escribir "Ingrese el número de términos N:"
+    Leer N
+	
+    
+    sen_x <- x
+    potencia <- x
+    factorial <- 1
+    signo <- -1
+	
+    
+    Para i <- 1 Hasta N Hacer
+        potencia <- potencia * x * x  
+        factorial <- factorial * (2 * i) * (2 * i + 1)  
+        sen_x <- sen_x + (signo * (potencia / factorial))  
+        signo <- signo * (-1)  
+    FinPara
+	
+    
+    Escribir "La aproximación de sen(", x, ") con ", N, " términos es: ", sen_x
+FinAlgoritmo
+
+
+
 
 
 

@@ -1,0 +1,14 @@
+Tipo de Dato	Tamaño (Bytes)
+void	No ocupa espacio (es una palabra clave)
+boolean	1 byte (aunque en realidad la JVM puede optimizarlo)
+char	2 bytes (UTF-16)
+int	4 bytes
+float	4 Bytes
+
+
+Tipo de Dato	Tamaño (Bytes) (aprox.)
+None (equivalente a void)	No tiene un tamaño definido, pero una variable None ocupa al menos 16 bytes
+bool	1 byte (pero en memoria puede ocupar más debido a la estructura de objetos)
+str (equivalente a char)	1 byte por carácter en ASCII, 2-4 bytes en UTF-8/UTF-16
+int	Al menos 28 bytes (puede crecer dinámicamente)
+float	24 bytes (IEEE 754 de doble precisión)
