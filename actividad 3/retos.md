@@ -271,7 +271,7 @@ Algoritmo Seno_Taylor
 	
     
     Escribir "La aproximación de sen(", x, ") con ", N, " términos es: ", sen_x
-FinAlgoritmo
+FinAlgoritmo.
 
 
 
