@@ -1,0 +1,161 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    float x1, y1, x2, y2, distancia;
+
+    printf("Ingrese la coordenada x del primer punto: ");
+    scanf("%f", &x1);
+
+    printf("Ingrese la coordenada y del primer punto: ");
+    scanf("%f", &y1);
+
+    printf("Ingrese la coordenada x del segundo punto: ");
+    scanf("%f", &x2);
+
+    printf("Ingrese la coordenada y del segundo punto: ");
+    scanf("%f", &y2);
+
+    distancia = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
+
+    printf("La distancia entre los puntos es: %f\n", distancia);
+
+    return 0;
+}
+
+
+
+2:
+
+#include <stdio.h>
+#include <math.h>
+
+double factorial(int n) {
+    if (n == 0) {
+        return 1;
+    } else {
+        return n * factorial(n - 1);
+    }
+}
+
+int main() {
+    double x, termino, resultado;
+    int n, signo, i, j;
+
+    printf("Ingrese el valor del ángulo en radianes: ");
+    scanf("%lf", &x);
+
+    printf("Ingrese el número de términos a calcular: ");
+    scanf("%d", &n);
+
+    resultado = x;
+    signo = -1;
+
+    for (i = 3; i <= (2 * n - 1); i += 2) {
+        termino = pow(x, i) / factorial(i);
+        resultado += signo * termino;
+        signo *= -1;
+    }
+
+    printf("El seno de %lf es aproximadamente: %lf\n", x, resultado);
+
+    return 0;
+}
+
+
+3:
+
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    float cateto1, cateto2, hipotenusa;
+
+    printf("Ingrese la longitud del cateto 1: ");
+    scanf("%f", &cateto1);
+
+    printf("Ingrese la longitud del cateto 2: ");
+    scanf("%f", &cateto2);
+
+    hipotenusa = sqrt(pow(cateto1, 2) + pow(cateto2, 2));
+
+    printf("La hipotenusa es: %f\n", hipotenusa);
+
+    return 0;
+}
+
+
+4:
+
+#include <stdio.h>
+#include <math.h>
+
+double factorial(int n) {
+    if (n == 0) {
+        return 1;
+    } else {
+        return n * factorial(n - 1);
+    }
+}
+
+int main() {
+    double x, termino, resultado;
+    int n, signo, i, j;
+
+    printf("Ingrese el valor del ángulo en radianes: ");
+    scanf("%lf", &x);
+
+    printf("Ingrese el número de términos a calcular: ");
+    scanf("%d", &n);
+
+    resultado = x;
+    signo = -1;
+
+    for (i = 3; i <= (2 * n - 1); i += 2) {
+        termino = pow(x, i) / factorial(i);
+        resultado += signo * termino;
+        signo *= -1;
+    }
+
+    printf("El seno de %lf es aproximadamente: %lf\n", x, resultado);
+
+    return 0;
+}
+
+
+5:
+
+#include <stdio.h>
+#include <math.h>
+
+double factorial(int n) {
+    if (n == 0) {
+        return 1;
+    } else {
+        return n * factorial(n - 1);
+    }
+}
+
+int main() {
+    double x, termino, resultado;
+    int n, signo, i, j;
+
+    printf("Ingrese el valor del ángulo en radianes: ");
+    scanf("%lf", &x);
+
+    printf("Ingrese el número de términos a calcular: ");
+    scanf("%d", &n);
+
+    resultado = x;
+    signo = -1;
+
+    for (i = 3; i <= (2 * n - 1); i += 2) {
+        termino = pow(x, i) / factorial(i);
+        resultado += signo * termino;
+        signo *= -1;
+    }
+
+    printf("El seno de %lf es aproximadamente: %lf\n", x, resultado);
+
+    return 0;
+}
